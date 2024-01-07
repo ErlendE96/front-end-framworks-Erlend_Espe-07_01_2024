@@ -5,8 +5,8 @@ import SearchBar from '../Layout/Header/SearchBar/SearchBar';
 const ProductPage = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState('');
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -18,10 +18,10 @@ const ProductPage = () => {
           setProducts(data);
           setFilteredProducts(data);
         } else {
-          console.error('Failed to fetch products:', response.statusText);
+          setError('Failed to fetch products');
         }
       } catch (error) {
-        console.error('Error fetching products:', error.message);
+        setError('Error fetching products');
       } finally {
         setLoading(false);
       }
@@ -31,10 +31,7 @@ const ProductPage = () => {
   }, []);
 
   const handleSearch = (searchTerm) => {
-    setSearchTerm(searchTerm);
-
-
-    const filtered = products.filter(product =>
+    const filtered = products.filter((product) =>
       product.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredProducts(filtered);
@@ -42,6 +39,10 @@ const ProductPage = () => {
 
   if (loading) {
     return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>{error}</p>;
   }
 
   return (
@@ -78,10 +79,6 @@ const ProductPage = () => {
     ))}
   </ul>
 </div>
-
-
-
-
 
   );
 };
