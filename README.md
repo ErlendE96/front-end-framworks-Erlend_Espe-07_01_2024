@@ -1,9 +1,8 @@
-# Online auction website
-![image](https://github.com/ErlendE96/front-end-framworks-Erlend_Espe-07_01_2024/assets/96021420/7e42ee21-f60a-41de-8d98-dba34093e636)
+#eCom
+<img width="1426" alt="sc-jsfw" src="https://github.com/ErlendE96/front-end-framworks-Erlend_Espe-07_01_2024/assets/96021420/ba01b5e4-139a-4aff-9f86-be250af19f7b">
 
-## Description
-This website is made for users to be able to list items which other are able to bid on. Users are able to register and log in to the website. new users are rewarded 1000 tokens which they are able to use to bid on items. 
-When logged in, the user is able to watch other users profiles aswell as their own. On these profiles, the users token amount is shown, aswell as their avatar and all their previous posts. 
+##Details
+The eCom websites purpose is to display variuous items for sale. The items price and potential discount is shown, and the user is able to add items to the shopping cart and proceed to the checkout. The website retrieves its data from an api. 
 
 ## Built with
 React.js
