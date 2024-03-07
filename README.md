@@ -7,6 +7,9 @@ The eCom websites purpose is to display variuous items for sale. The items price
 ## Built with
 React.js
 
+## Live site:
+https://joyful-horse-bcac3a.netlify.app/
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
