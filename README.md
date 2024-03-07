@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Online auction website
+![image](https://github.com/ErlendE96/front-end-framworks-Erlend_Espe-07_01_2024/assets/96021420/7e42ee21-f60a-41de-8d98-dba34093e636)
+
+## Description
+This website is made for users to be able to list items which other are able to bid on. Users are able to register and log in to the website. new users are rewarded 1000 tokens which they are able to use to bid on items. 
+When logged in, the user is able to watch other users profiles aswell as their own. On these profiles, the users token amount is shown, aswell as their avatar and all their previous posts. 
+
+## Built with
+React.js
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
